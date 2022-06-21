@@ -56,7 +56,7 @@ public class ApiController {
     }
     
     @GetMapping ("/planets/saturn")
-    public ResponseEntity<Planets> getSaturn() {
+    public ResponseEntity<Planets.Saturn> getSaturn() {
         return planetsService.findSaturn();
     }
     

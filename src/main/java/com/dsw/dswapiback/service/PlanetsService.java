@@ -40,8 +40,8 @@ public class PlanetsService {
         return ResponseEntity.ok(restTemplate.getForObject(URL_EARTH, Planets.Earth.class));
     }
     
-    public ResponseEntity<Planets> findSaturn() {
-        return ResponseEntity.ok(restTemplate.getForObject(URL_SATURN, Planets.class));
+    public ResponseEntity<Planets.Saturn> findSaturn() {
+        return ResponseEntity.ok(restTemplate.getForObject(URL_SATURN, Planets.Saturn.class));
     }
     
     public ResponseEntity<Planets> findUranus() {
